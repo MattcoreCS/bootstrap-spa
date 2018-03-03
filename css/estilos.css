@@ -12,6 +12,7 @@ header {
 	background-size: cover;
 	background-position: top center;
 	height: 100%;
+	position: relative;
 }
 
 header h1 {
@@ -39,6 +40,7 @@ header h1 {
 	color: #FFF;
 	margin-bottom: 0;
 	font-size: 24px;
+	width:100%;
 }
 
 .contato-select,
@@ -64,7 +66,7 @@ footer address:last-child {
 }
 
 @media(min-width: 768px) {
-	#paineis-sobre {
+	#panels-sobre {
 		margin-top: 0;	
 	}
 }
@@ -82,4 +84,16 @@ footer address:last-child {
 	}
 }
 
+@media(min-width: 992px) {
+	.carousel .item {
+	  height: 1000px;
+	  width: 100%;
+	}
 
+	.item img {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	}
+}
